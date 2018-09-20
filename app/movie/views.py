@@ -5,10 +5,12 @@ import json
 
 
 def keyboard(request):
-    return JsonResponse({
-        'type': 'buttons',
-        'buttons': ['오늘', '내일']
-    })
+    return JsonResponse(
+        {
+            'type': 'buttons',
+            'buttons': ['학식', '내일학실', '도서관']
+        }
+    )
 
 
 @csrf_exempt
